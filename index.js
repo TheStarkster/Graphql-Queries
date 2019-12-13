@@ -7,7 +7,7 @@ const MongoClient = require('mongoose')
 const app = express()
 
 app.use(cors())
-MongoClient.connect('mongodb+srv://sGurkaran:qmxWco8121TB2wS0@gurkaranmaincluster-auih8.mongodb.net/graphql?retryWrites=true&w=majority', { useNewUrlParser: true,useUnifiedTopology: true })
+MongoClient.connect('connection string goes here', { useNewUrlParser: true,useUnifiedTopology: true })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
